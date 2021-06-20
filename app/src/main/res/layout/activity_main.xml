@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list_converstion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:background="#efefef" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/ed_enter_message"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/btn_send_msg"
+            android:layout_toLeftOf="@+id/btn_send_msg"
+            android:autofillHints="Type a message"
+            android:hint="Type a message"
+            android:textColorHighlight="#CAB4B4"
+            android:textColorLink="#353535"
+            android:textSize="21sp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/str_label_btn_send"
+            android:textColor="#000000"
+            app:backgroundTint="#13D506"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
